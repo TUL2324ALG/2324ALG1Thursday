@@ -2,7 +2,7 @@ package assignments02_numbers;
 
 import java.util.Scanner;
 
-public class SpeedLimit {
+public class U9And10SpeedLimit {
     
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
@@ -37,6 +37,8 @@ public class SpeedLimit {
         System.out.format("Čas v hodinách: %.2f\n",casvhodinach);        
         System.out.format("Průměrná rychlost v km/h: %.2f\n", prumRychlost);        
         System.out.println("Ridič překročil rychlost o " +prekroceni +" km/h");
+        
+        System.out.println("Ridic pokutu " + ((prekroceni <= 0)?"neplati":"plati"));
     }
     
 }

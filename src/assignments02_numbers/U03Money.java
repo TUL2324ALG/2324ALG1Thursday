@@ -6,7 +6,7 @@ package assignments02_numbers;
 
 import java.util.Scanner;
 
-public class Money {
+public class U03Money {
  
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
