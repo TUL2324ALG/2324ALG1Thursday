@@ -1,8 +1,8 @@
 package assignments03_logic_branching_loops;
 
 import java.util.Scanner;
-import java.util.concurrent.ThreadLocalRandom;
-import mylibrary.NumbersTools;
+//import java.util.concurrent.ThreadLocalRandom;
+import assignments05_methods.NumbersTools;
 
 public class U38GuessingNumber {
 
