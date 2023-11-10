@@ -1,4 +1,4 @@
-package mylibrary;
+package assignments05_methods;
 
 import java.util.concurrent.ThreadLocalRandom;
 
