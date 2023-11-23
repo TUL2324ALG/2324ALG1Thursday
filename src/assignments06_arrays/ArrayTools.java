@@ -1,19 +1,25 @@
 package assignments06_arrays;
 
+import assignments05_methods.NumbersTools;
+
 public class ArrayTools {
 
     public static void main(String[] args) {
         int[] myArray = {4, 9, 3, 1, 9};//staticky inicializator
         int[] myArray2 = {3, 2, 2, 1, 0};
         print(myArray);
-        print2(myArray);
-        System.out.println(addition(myArray));
-        System.out.println(maxValue(myArray));
-        System.out.println(indexMaxFirst(myArray));
-        System.out.println(indexMaxLast(myArray));
-        System.out.println(vyskytZadaneHodnoty(myArray, 10));
-        System.out.println(jeSestupne(myArray2));
-        System.out.println(jeVzestupne(myArray2));
+       // print2(myArray);
+//        System.out.println(addition(myArray));
+//        System.out.println(maxValue(myArray));
+//        System.out.println(indexMaxFirst(myArray));
+//        System.out.println(indexMaxLast(myArray));
+//        System.out.println(vyskytZadaneHodnoty(myArray, 10));
+//        System.out.println(jeSestupne(myArray2));
+//        System.out.println(jeVzestupne(myArray2));
+//        System.out.println(ReverseValue(myArray));
+        print(reverseValue(myArray));
+        int n = 10;
+        print(permutace(n));
     }
 
     public static void print(int[] a) {
@@ -149,6 +155,61 @@ public class ArrayTools {
         }
         return vzestupnost;
 
+    }
+    //neupravuje puvodni, vytvari a vraci nove pole
+    public static int[] reverseValue(int[] a) {
+        int[] output = new int[a.length];
+            for (int i = 0; i < a.length; i++) {
+            output[a.length-1-i]=a[i];   
+        }
+        return output;
+    }
+    
+    //menim puvodni pole a teda nic nevracim
+    public static void reverseValue1(int[] a){
+        int temp;
+        for (int i = 0; i < a.length/2; i++) {
+            temp = a[i];
+            a[i] = a[a.length-1-i];
+            a[a.length-1-i] = temp;
+        }
+    }
+    
+    //pretizeni metody, overload
+//    public static int[] reverseArray(double[] a){
+//        
+//    }
+    
+    
+    public static int[] permutace(int n){
+        int[] a = fillFrom1To(n);
+        fisherYatesShuffle(a);
+        return a;
+    }
+    
+    public static int[] fillFrom1To (int n){
+        int[] a = new int[n];
+        for(int i = 0; i < n; i++) {
+            a[i] = i+1;
+        }
+        return a;
+    }
+    
+    //-- To shuffle an array a of n elements (indices 0..n-1):
+        //for i from n−1 down to 1 do
+        //     j ← random integer such that 0 ≤ j ≤ i
+        //     exchange a[j] and a[i]
+    public static void fisherYatesShuffle(int[] a){
+        int j = 0;
+        int temp = 0;
+        int n = a.length;
+        for(int i = n-1; i > 0; i--) {
+            j = (int)(Math.random() * (i+1));
+            //j = NumbersTools.generateRandom(0, i);
+            temp = a[i];
+            a[i] = a[j];
+            a[j] = temp;
+        }
     }
 
 }
