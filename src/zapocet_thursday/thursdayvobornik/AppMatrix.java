@@ -15,6 +15,7 @@ public class AppMatrix {
     
     private static final Scanner sc = new Scanner(System.in);
     
+    //JV A
     public static void main(String[] args){
         int radek;
         int sloupec;
