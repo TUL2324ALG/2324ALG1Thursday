@@ -19,7 +19,7 @@ public class Tools {
         System.out.println("");
     }
     
-    public static int[] sumArray (int[] a, int[] b){
+    public static int[] sumArray (int[] a, int[] b){ //JV pole nemusi byt stejne velke
         int[] sum=new int[a.length];
         for (int i = 0; i < a.length; i++) {
             sum[i]=a[i]+b[i];
@@ -31,9 +31,9 @@ public class Tools {
        int notNull=0;
        int row=0;
        int temp=0;
-       for (int i = 0; i < c.length; i++) {
+       for (int i = 0; i < c.length; i++) { //JV chtelo by to nekde vynulovat temp r
            for (int j = 0; j < c[i].length; j++) {
-               if (c[i][j]>0) {
+               if (c[i][j]>0) { //JV nenulove muze byt i zaporne
                  temp++;  
                }
             }
@@ -49,7 +49,7 @@ public class Tools {
        boolean oneMatrix = true;
        for (int i = 0; i < d.length; i++) {
            for (int j = 0; j < d[i].length; j++) {
-               
+               //JV chybi
            }
        }
        return oneMatrix;

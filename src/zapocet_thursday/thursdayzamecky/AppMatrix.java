@@ -26,7 +26,7 @@ public static Scanner sc = new Scanner(System.in);
             }
         }
         
-        
+        //JV chybi volani metody
         
         for(int i = 0; i< c.length; i++){
             for (int j = 0; j < c[i].length; j++){

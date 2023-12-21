@@ -39,18 +39,18 @@ public class Tools {
         System.out.println("Řádek se nejvíce nenulovými hodnotami je: " +  maxrow);
         
     }
-    public static int[] sumArray(int[] a, int[] b){
+    public static int[] sumArray(int[] a, int[] b){ //JV nevime, ktere pole je kratsi a ktere delsi
         int[] c = new int[a.length + b.length];
         for (int i = 0; i < a.length; i++) {
            c[i] = a[i];
     }
         for (int j = 0; j < b.length; j++){
-            c[a.length + b.length + j] = b[j];
+            c[a.length + b.length + j] = b[j]; //JV delka pole c je a.length + b.length, tj. index a.length + b.length + j neexistuje
         }
         return c;
         
     }
-        
+    //JV A/B    
     public static int maxRownNotNull(int[][] matice){
         int maxrow;
         int maxnonzerocount = 0;
@@ -66,9 +66,11 @@ public class Tools {
                 maxrow = i +1;
             }
         }
-        return maxrow;
+        return maxrow; //JV potreba inicializovat promennou
         
     }
+    
+    //JV chybi oneMatrix
 }
     
 

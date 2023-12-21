@@ -15,18 +15,18 @@ public class AppMatrix {
     
     public static void main(String[] args) {
         System.out.println("Napiš rozměr matice n:");
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); //JV staci jeden Scanner pro celý program
         int n = 2;
         System.out.println("Napiš rozměr matice m:");
-        Scanner scr = new Scanner(System.in);
+        Scanner scr = new Scanner(System.in); //JV staci jeden Scanner pro celý program
         int m = 3;
         
-        int[][] mat = new int[m][n];
+        int[][] mat = new int[m][n]; //JV chybi nacteni matice
         
         
         
         
-        System.out.println(Arrays.toString(mat));
+        System.out.println(Arrays.toString(mat)); //JV nechteli jsme vypsat celou matici, jen radek s maximalnim poctem nenulovych prvku
         System.out.println(Tools.maxRowNotNull(mat));
         
     }

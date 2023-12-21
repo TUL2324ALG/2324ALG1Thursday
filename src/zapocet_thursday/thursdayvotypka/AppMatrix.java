@@ -29,6 +29,7 @@ public class AppMatrix {
         }
         radek=Array.Tools.maxRowNotNull;
         System.out.println("Radek s nejvice nulovyma hodnotama je radek: " + radek);
+        //JV ok, jen jeste vypsat hodnoty toho radku
     }
     
 }

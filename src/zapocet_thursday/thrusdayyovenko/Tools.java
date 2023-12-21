@@ -13,7 +13,7 @@ public class Tools {
        
        int[] result = new int[maxLength];
        for(int i=0; i<maxLength; i++){
-           int val1 =(i<a)? arr1[i]:0;
+           int val1 =(i<a)? arr1[i]:0; //JV kde scitate?
            int val2 =(i<b)? arr1[i]:0;
        }
       return result;

@@ -21,7 +21,7 @@ public class Tools {
         System.out.println(oneMatrix(mat));
     }
     
-    //JV co kdyz bude prvni pole kratsi
+    //JV co kdyz bude prvni nebo druhe pole kratsi
     public static void sumArray(int[] a, int[] b) { //JV vysledkem metody maji byt data ne vypis!
         int[] c = new int[a.length];
         for (int i = 0; i < b.length; i++) {
@@ -31,7 +31,7 @@ public class Tools {
         System.out.println(c);
     }
     
-    public static int maxRowNotNull(int[][] mat){
+    public static int maxRowNotNull(int[][] mat){ //JV matice muze mit ruzny pocet radku
         int radek1 = 0;
          int radek2 = 0;
           int radek3 = 0;
@@ -83,11 +83,11 @@ public class Tools {
                 if (mat[i][i] != 1){
                     ano = false;
                 }
-                if (mat[i][j] != mat[j][i]) {
+                if (mat[i][j] != mat[j][i]) { //JV toto je test symetrie
                 ano = false;
                 
             }
-                if (mat[1][2] != 0){
+                if (mat[1][2] != 0){ //JV proc jenom test jednoho prvku na 0
                     ano = false;
                 }
                 

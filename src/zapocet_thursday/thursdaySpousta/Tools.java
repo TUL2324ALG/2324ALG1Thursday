@@ -20,14 +20,15 @@ public class Tools {
         sumArray(a,b);
     }
     public static final void sumArray(int[] a, int[] b){ 
-        if(a.length > b.length){
+        if(a.length > b.length){ //JV a co kdyz je b vetsi nez a
             for (int i = 0; i < b.length; i++) {
-                 a[i] = a[i] + b[i];
+                 a[i] = a[i] + b[i]; //JV bylo potreba secist vsechny prvky, ne jenom spolecne
             }
    
     }
     }
-        
+   
+   //JV A
    public static final int maxRowNotNull (int[][] a){
    int max=0;
    int sum = 0;
@@ -49,7 +50,7 @@ public class Tools {
    public static final boolean oneMatrix (int[][] a){
        for (int i = 0; i < a.length; i++) {
            for (int j = 0; j < a[0].length; j++) {
-               if (a[i][i] != 1){
+               if (a[i][i] != 1){ //JV kontroluje se zbytecne hodnekrat
                return false;
                }
                if (a[i][j] !=0 && i != j){

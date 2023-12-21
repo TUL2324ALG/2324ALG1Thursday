@@ -15,7 +15,8 @@ public class UniquelInInterval {
         int[] pos = new int [kolvo] ;
         System.out.println("Zadej ");
         for (int i = 0; i < .length; i++) {
-            
+         
+        //JV chybi
             
         }
         

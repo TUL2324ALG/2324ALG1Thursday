@@ -30,7 +30,7 @@ public class Tools {
         } 
         
         for (int i=0; i<a.length-1 && i<b.length-1; i++){
-            c[i]=a[i] + b[i];
+            c[i]=a[i] + b[i]; //JV secte, ale jenom do velikosti nejkratsiho pole
         }
         return c;
     }
@@ -38,26 +38,27 @@ public class Tools {
         int [] count = new int [a.length];
         int max =0;
         
-        for (int i=0; i<a.length-1; i++){
+        for (int i=0; i<a.length-1; i++){ //JV pozor vynechavate posledni prvek i < a.length tj posledni i = a.length - 1 
             for (int j=0; j<a[0].length-1; j++){
                 if (a[i][j]!=0){
                     count[i]++;
                 }else{
-                    count[i]=0;
+                    count[i]=0; //JV pokud jeden z prvku bude 0, prepisete si pocet nenulovych prvku, ktere jste v radku zatim nasel
                 }
             }      
         }
   
         for (int i=0; i<count.length-1;i++){
-            if (count[i]>=max){
+            if (count[i]>=max){ //JV pozor porovnavate hodnotu na indexu s indexem
                 max=i;
             }
         }
         return max;
     }
-    //funguje správně
+   //JV A
+//funguje správně
     public static boolean oneMatrix (int [][] a){
-        boolean truth = true;
+        boolean truth = true; //JV radsi pojmenovat napr. isOneMatrix
         if (a.length!=a[0].length){
             return false;
         } 

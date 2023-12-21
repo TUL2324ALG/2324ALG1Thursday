@@ -48,7 +48,7 @@ public class UniqueInInterval {
             cislo = sc.nextInt();           
         }
         int uniq=0;
-        for (int i = 0; i < interval.length; i++) 
+        for (int i = 0; i < interval.length; i++) //JV chcelo by to trochu zoptimalizovat
         {
             int vyskyt =0;
             for (int j = 0; j < posloupnost.length; j++) 

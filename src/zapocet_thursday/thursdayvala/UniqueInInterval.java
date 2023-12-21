@@ -29,7 +29,7 @@ public class UniqueInInterval {
         
         int [] interval = new int [a];
         for (int i=0; i<interval.length; i++){
-            System.out.println("Zadejte hodnotu");
+            System.out.println("Zadejte hodnotu"); //JV toto muzete dat i nad for jednou pro vsechny hodnoty "Zadejte hodnoty"
             interval[i] = sc.nextInt();
         }
         count = getDigitCount(interval, min, max);
@@ -40,7 +40,7 @@ public class UniqueInInterval {
         int count=0;
         for (int i=0; i<a.length; i++){
                 if (a[i]>=min && a[i]<=max){
-                    count++;
+                    count++; //JV mela to byt jedinecna cisla
                 }
         }
         return count;

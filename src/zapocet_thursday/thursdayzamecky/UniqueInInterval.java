@@ -19,11 +19,13 @@ public static Scanner sc = new Scanner(System.in);
         // TODO code application logic here
         System.out.println("Zadej hodnotu čísel: ");
         
-        
+        //JV program je vzdy vseobecnej - dokaze resit víc uloh stejneho typu
         int pocet=0;
         int[] a = {4, 6, 3, 5, 5, 3, 2, 7, 5, 4};
+        int min = 4;
+        int max = 9;  
         for (int i = 0; i < a.length; i++){
-            if (a[i] >= 4 && a[i] <=9){
+            if (a[i] >= min && a[i] <=max){
                 pocet++;
             }
             

@@ -13,6 +13,7 @@ import java.util.Scanner;
  */
 public class AppMatrix {
     
+    //JV A
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);        
         System.out.println("Zadejte počet řádků a sloupců matice: ");

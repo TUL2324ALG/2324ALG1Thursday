@@ -22,7 +22,7 @@ public class UniqueInterval {
         System.out.println("Zadejte posloupnost");
         while (true){
             numberInInterval = sc.nextInt();
-         if (numberInInterval<0) break;
+         if (numberInInterval<0) break; //JV nevypada to spravne
             interval[i-1] = numberInInterval;
             helpingArray = new int[interval.length+1];
             helpingArray = interval;

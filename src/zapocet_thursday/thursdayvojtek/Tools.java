@@ -47,6 +47,7 @@ public class Tools {
         System.out.println(oneMatrix(a));
     }
    
+    //JV A
     public static int[] sumArray(int[] a, int[] b)
     {        
         if (a.length<b.length)
@@ -73,6 +74,7 @@ public class Tools {
         return vysledek;
     }
     
+    //JV A/B
     public static int[] maxRowNotNull(int[][] a)
     {
         int[]vysledek =new int[5];
@@ -83,7 +85,7 @@ public class Tools {
             int nenul =0;
             for (int j = 0; j < a[i].length; j++) 
             {
-                if(a[i][j]>0)
+                if(a[i][j]>0) //JV nenulove muze byt i zaporne
                 {
                     nenul++;
                 }
@@ -123,7 +125,7 @@ public class Tools {
                         }else
                         {
                             vysledek = false;
-                        break;
+                        break; //JV pozor break ukoncuje jen nejblizsi cyklus
                         }
                         
                     }
@@ -142,7 +144,7 @@ public class Tools {
      * @param b
      * @return 
      */
-    public static int maxRowNotNullLine(int[][] a)
+    public static int maxRowNotNullLine(int[][] a) //JV tuto metodu tu uz jednou mate, stacilo zavolat a eventualne pridat +1
     {        
         int max=Integer.MIN_VALUE;
         int radek=0;

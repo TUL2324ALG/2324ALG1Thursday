@@ -24,7 +24,7 @@ public class UniqueInInterval {
         Scanner sc = new Scanner(System.in);
         int uniq=0;
         int temp=0;
-        System.out.println("Zadejte velikost posloupnosti: ");
+        System.out.println("Zadejte velikost posloupnosti: "); //JV uzivatel nezada delku posloupnosti, jen jeji zadavani ukonci zapornym cislem
         int[] sequence=new int[sc.nextInt()];
         System.out.println("Zadejte hodnoty posloupnosti (zápornou hodnotou ukončete zadávání hodnot): ");
         for (int i = 0; i < sequence.length; i++) {
@@ -38,7 +38,7 @@ public class UniqueInInterval {
         System.out.println("Zadejte konec intervalu: ");
         int maxInterval=sc.nextInt();
         for (int i = minInterval; i < maxInterval+1; i++) {
-            if (sequence[i]!=temp) {
+            if (sequence[i]!=temp) { //JV bylo trochu jinak myslene zadani
                 uniq++;
                 temp=sequence[i];
             }

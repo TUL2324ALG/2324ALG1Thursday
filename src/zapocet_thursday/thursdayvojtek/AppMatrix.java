@@ -10,6 +10,7 @@ import java.util.Scanner;
  *
  * @author Vojtek-M-a1c7
  */
+//JV A
 public class AppMatrix {
 
     /**

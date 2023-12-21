@@ -30,7 +30,7 @@ public class AppMatrix {
             }      
 
             System.out.println(Tools.maxRowNotNull(matrix));
-            Tools.maxRowNotNull(matrix);
+            Tools.maxRowNotNull(matrix);//JV proc volate 2x externi metodu
 
             System.out.println("Chcete pokracovat");
             odpoved = sc.nextInt();
