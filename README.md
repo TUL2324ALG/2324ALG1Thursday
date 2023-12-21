@@ -1,2 +1,2 @@
-# 2324ALG1Thursday
-Kódy z hodin ALG1 (cvičení čtvrtek)
+# 2324ALG1Tuesday
+Kódy z hodin ALG1 (cvičení úterý)
